@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tinder_app_clone/widgets/custom_text_field_widget.dart';
+
+import 'registation_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -110,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   InkWell(
                       onTap: () {
-
+                        Get.to(RegistrationScreen());
                       },
                       child: const Text(
                         "Create here",
